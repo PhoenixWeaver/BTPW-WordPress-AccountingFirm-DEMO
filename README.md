@@ -5,6 +5,7 @@
 This is a professional static HTML/CSS/JavaScript demo website for **PrecisionBooks Accounting Firm**, created as a portfolio piece for a WordPress website redesign project.
 
 **Live Demo:** [https://phoenixflix.vercel.app/AccFirmDemo](https://phoenixflix.vercel.app/AccFirmDemo)
+
 **Standalone Demo:** https://phoenixflix.vercel.app/AccountingFirmDemo/
 
 ### Purpose
@@ -150,3 +151,39 @@ This is a demo project created for portfolio/job application purposes.
 - Performance optimization
 - Security headers
 - SSL certificate
+
+=================================================================================
+## STANDALONE DEMO
+✅ Zero Impact on PhoenixFlix Performance
+1. Separate Asset Loading
+PhoenixFlix users: Only load PhoenixFlix assets (app.js, styles.css)
+AccFirmDemo users: Only load accounting demo assets (/AccFirmDemo/css/*, /AccFirmDemo/js/*)
+No cross-contamination: Browsers only request files for the current page
+
+2. Build Process Unchanged
+Your FULL_build-optimized-clean.ps1 script:
+Only minifies specific PhoenixFlix files
+Ignores the AccountingFirmDemo/ folder completely
+Build time remains exactly the same
+
+3. Route-Based Separation
+phoenixflix.vercel.app/          → PhoenixFlix app
+phoenixflix.vercel.app/AccFirmDemo → Accounting demo
+
+Copy
+Different routes = different assets loaded
+Zero overlap in resource loading
+
+4. File Size Impact
+Accounting demo adds: ~55KB total (CSS + JS)
+Only loaded when: Someone visits /AccFirmDemo
+PhoenixFlix impact: 0 bytes (completely separate)
+
+5. Vercel Optimization
+Serves each route independently
+Automatic compression (gzip/brotli)
+Proper caching headers per route
+Only delivers requested assets
+
+Summary
+The accounting demo is like having two completely separate websites that just happen to share the same domain. Your PhoenixFlix app performance remains exactly the same as before! 🚀
