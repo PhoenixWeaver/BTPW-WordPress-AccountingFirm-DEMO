@@ -6,7 +6,7 @@ This is a professional static HTML/CSS/JavaScript demo website for **PrecisionBo
 
 **Live Demo:** [https://phoenixflix.vercel.app/AccFirmDemo](https://phoenixflix.vercel.app/AccFirmDemo)
 
-**Standalone Demo:** https://phoenixflix.vercel.app/AccountingFirmDemo/
+**Standalone WordPress Demo:** https://phoenixflix.vercel.app/WordPressDemo/
 
 ### Purpose
 - Demonstrate UI/UX design skills for job application
